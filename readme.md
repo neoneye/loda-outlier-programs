@@ -16,3 +16,8 @@ There can be multiple variants, such as:
 - `oeis_divergent/0/A059539_42_2.asm`, does things in another way and also yields 42 correct terms.
 
 The variant number gets incremented when there is a new program that would otherwise collide with an existing program.
+
+
+## License
+
+Apache-2.0 license or MIT license.
