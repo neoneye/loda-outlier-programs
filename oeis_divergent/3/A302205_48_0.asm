@@ -2,14 +2,12 @@
 
 mov $2,1
 lpb $0
-  mul $2,2
   mov $3,$0
   div $0,2
-  add $3,$0
-  mod $3,3
+  mod $3,2
   mul $3,$2
   add $1,$3
+  mul $2,2
   mul $2,10
 lpe
 mov $0,$1
-div $0,2
