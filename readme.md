@@ -1,8 +1,10 @@
 # LODA outlier programs
 
-Incorrect LODA programs that diverges after a number of terms. These ares useful as training data.
+This repo contains training data used by [loda-rust](https://github.com/loda-lang/loda-rust).
 
-Correct LODA programs are stored in another repository, see [loda-programs](https://github.com/loda-lang/loda-programs).
+These are incorrect LODA programs that diverges after a number of terms. Bad examples are great for training.
+
+The correct LODA programs are stored in the [loda-programs](https://github.com/loda-lang/loda-programs) repository.
 
 
 ## Naming convention
