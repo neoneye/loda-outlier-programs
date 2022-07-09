@@ -7,7 +7,7 @@ Correct LODA programs are stored in another repository, see [loda-programs](http
 
 ## Naming convention
 
-The filename has these components: `oeis-id`, `number-of-correct-terms`, `varient-number`.
+The filename has these components: `oeis-id`, `number-of-correct-terms`, `variant-number`.
 
 Example of a filename is `oeis_divergent/003/A003152_238_0.asm`, this program shares 238 initial terms with the [A003152](https://oeis.org/A003152) integer sequence, and is variant number 0.
 
