@@ -8,7 +8,7 @@
 #
 require 'fileutils'
 
-OEIS_DIVERGENT_DIRNAME = "oeis_divergent"
+OEIS_DIVERGENT_DIR = "../oeis_divergent"
 
 def absolute_paths_for_programs_to_be_processed(rootdir)
     relative_paths = Dir.glob(File.join("**", "*.asm"), base: rootdir)
@@ -38,8 +38,8 @@ class RenameOperation
 end
 
 def process_all_files
-    paths = absolute_paths_for_programs_to_be_processed(OEIS_DIVERGENT_DIRNAME)
-    puts "Number of files in #{OEIS_DIVERGENT_DIRNAME} dir: #{paths.count}"
+    paths = absolute_paths_for_programs_to_be_processed(OEIS_DIVERGENT_DIR)
+    puts "Number of files in #{OEIS_DIVERGENT_DIR} dir: #{paths.count}"
 
     operations = []
     paths.each do |path|
@@ -53,7 +53,7 @@ def process_all_files
             raise "Expected filename to contain OEIS id. Unable to process file at path: #{path}"
         end
         dirname = "%03i" % (program_id / 1000)
-        destination_dir_path = File.join(OEIS_DIVERGENT_DIRNAME, dirname)
+        destination_dir_path = File.join(OEIS_DIVERGENT_DIR, dirname)
         destination_file_path = File.join(destination_dir_path, filename)
         operations << RenameOperation.new(program_id, path, destination_dir_path, destination_file_path)
     end
