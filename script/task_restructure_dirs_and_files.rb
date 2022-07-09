@@ -1,8 +1,8 @@
-# This task ensures that the files inside "oeis_divergent" follows the same structure as in the "loda-programs" repo.
+# This task ensures that the `oeis_divergent` dir follows the same structure as in the `loda-programs` repo.
 #
-# On top level it's dirs like this: 000, 001, 002, ..., 099, 100, 101, ..., 350, ..
+# On 1st level the dirs are named like this: 000, 001, 002, ..., 099, 100, 101, ..., 350, ..
 #
-# On the second level the files are named like this:
+# On 2nd level the files are named like this:
 # 004/A004081_176_0.asm
 # 267/A267113_324_0.asm
 #
