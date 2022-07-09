@@ -14,7 +14,7 @@ PROMPT>
 
 ### Run `maintenance` task
 
-This ensures that the `loda-outlier-programs` repo is good condition. It fixes dirnames, filenames. Removes debug footers from programs.
+This ensures that the `loda-outlier-programs` repo is in a good condition. It fixes dirnames, filenames. Removes debug footers from programs.
 
 ```
 PROMPT> rake maintenance
