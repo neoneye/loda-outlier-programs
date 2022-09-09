@@ -54,7 +54,10 @@ paths.each do |path|
     next unless extension == '.asm'
     filename = File.basename(path, '.asm')
     
-    re = /^(A\d+_\d+)_?(.*)$/
+    # Match names such as
+    # `/absolute/path//041/A041009_30_5.asm`
+    # `/absolute/path//041/A041009_timeout_33333_5.asm`
+    re = /^(A\d+(?:_[a-z]+)_\d+)_?(.*)$/
     if filename =~ re
         filename_part1 = $1
         filename_part2 = $2
