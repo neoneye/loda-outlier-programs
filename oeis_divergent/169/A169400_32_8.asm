@@ -1,0 +1,18 @@
+; A169400: Number of reduced words of length n in Coxeter group on 3 generators S_i with relations (S_i)^2 = (S_i S_j)^32 = I.
+; Submitted by Simon Strandgaard
+; 1,3,6,12,24,48,96,192,384,768,1536,3072,6144,12288,24576,49152,98304,196608,393216,786432,1572864,3145728,6291456,12582912,25165824,50331648,100663296,201326592,402653184,805306368,1610612736,3221225472
+
+mov $1,3
+lpb $0
+  add $0,1
+  mod $0,38
+  mul $1,2
+  mov $2,$3
+  add $3,1
+  gcd $3,$2
+  mul $3,$0
+  sub $0,2
+lpe
+gcd $3,$1
+div $1,$3
+mov $0,$1
