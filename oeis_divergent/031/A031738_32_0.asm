@@ -1,0 +1,15 @@
+; A031738: Numbers k such that the least term in the periodic part of the continued fraction for sqrt(k) is 60.
+; Submitted by Simon Strandgaard
+; 901,3602,8103,14404,22505,32406,44107,57608,72909,90010,108911,129612,152113,176414,202515,230416,260117,291618,324919,360020,396921,435622,476123,518424,562525,608426,656127,705628,756929,810030,864931,921632
+
+mov $2,$0
+div $0,32
+add $0,1
+mov $1,2
+add $1,$2
+sub $1,1
+mul $1,30
+pow $1,2
+mul $0,$1
+add $0,1
+add $0,$2
