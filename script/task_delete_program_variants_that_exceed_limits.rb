@@ -57,7 +57,7 @@ paths.each do |path|
 end
 
 if paths_for_deletion.count == 0
-    puts "Done"
+    puts "Number of deleted files: 0"
     return
 end
 
@@ -66,8 +66,9 @@ count0 = paths_for_deletion.count
 paths_for_deletion = paths_for_deletion.first(MAX_DELETES_IN_ONE_BATCH)
 count1 = paths_for_deletion.count
 if count0 != count1
-    puts "Deleting #{paths_for_deletion.count} files"
+    puts "Limiting the number of files for deletion to: #{paths_for_deletion.count}"
 end
 paths_for_deletion.each_with_index do |path, index|
     File.delete(path)
 end
+puts "Number of deleted files: #{paths_for_deletion.count}"
