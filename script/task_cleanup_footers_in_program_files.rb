@@ -40,6 +40,9 @@ def absolute_paths_for_all_programs(rootdir)
 end
 
 def cleanup_footer_of_asm_file(path)
+    unless File.file?(path)
+        return 0
+    end
     filename = File.basename(path)
     s = IO.read(path)
     modified = false
