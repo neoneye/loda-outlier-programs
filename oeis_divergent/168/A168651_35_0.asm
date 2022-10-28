@@ -1,0 +1,7 @@
+; A168651: Integers that can be generated with a C/C++ expression that is two or more characters shorter than their decimal representation.
+; Submitted by Simon Strandgaard
+; 10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,110000,120000,130000,140000,150000,160000,170000,180000,190000,200000,210000,220000,230000,240000,250000,260000,270000,280000,290000,300000,310000
+
+mod $0,35
+add $0,1
+mul $0,10000
